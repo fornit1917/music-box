@@ -1,0 +1,29 @@
+@import "../../node_modules/semantic-ui-css/semantic.min.css";
+
+body {
+    background: #f7f7f7;
+}
+
+.topbar {
+    padding: 1em 0 1em;
+}
+
+.search-results {
+    margin-top: 1.2em;
+    .segment {
+        margin: 0.6em 0;
+        padding: 0.6em;
+    }
+}
+
+.search-input {
+    width: 100%;
+    input {
+        box-shadow: 2px 2px 4px rgba(34,36,38,.15) !important;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
