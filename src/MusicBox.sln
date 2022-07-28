@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A8808AAD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBox.Infrastructure.Tests", "Tests\MusicBox.Infrastructure.Tests\MusicBox.Infrastructure.Tests.csproj", "{83F7AC87-9513-4BAC-97A8-CCF20E55E70E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBox.Domain.Tests", "Tests\MusicBox.Domain.Tests\MusicBox.Domain.Tests.csproj", "{3A56C6BB-673B-44A8-A06F-04B6409CBF4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +37,17 @@ Global
 		{83F7AC87-9513-4BAC-97A8-CCF20E55E70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83F7AC87-9513-4BAC-97A8-CCF20E55E70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83F7AC87-9513-4BAC-97A8-CCF20E55E70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A56C6BB-673B-44A8-A06F-04B6409CBF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A56C6BB-673B-44A8-A06F-04B6409CBF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A56C6BB-673B-44A8-A06F-04B6409CBF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A56C6BB-673B-44A8-A06F-04B6409CBF4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83F7AC87-9513-4BAC-97A8-CCF20E55E70E} = {A8808AAD-BD8B-4A64-9546-8399957200C2}
+		{3A56C6BB-673B-44A8-A06F-04B6409CBF4E} = {A8808AAD-BD8B-4A64-9546-8399957200C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2934E32D-0094-4608-BE92-D372A1325EDE}

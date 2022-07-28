@@ -14,6 +14,11 @@ namespace MusicBox.Domain.Services.Impl
 
         public PlaylistUrlInfo ParseUrl(string url)
         {
+            if (url.IndexOf("://") < 0)
+            {
+                url = "https://" + url;
+            }
+
             Uri uri;
             try
             {
