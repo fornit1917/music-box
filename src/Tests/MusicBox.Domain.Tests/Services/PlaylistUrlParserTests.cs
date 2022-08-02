@@ -2,6 +2,7 @@
 using MusicBox.Domain.Models;
 using MusicBox.Domain.Services;
 using MusicBox.Domain.Services.Impl;
+using System;
 
 namespace MusicBox.Domain.Tests.Services
 {

@@ -1,4 +1,7 @@
-﻿namespace MusicBox.Domain.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace MusicBox.Domain.Models
 {
     public class PlaylistUrlInfo
     {

@@ -1,4 +1,6 @@
-﻿namespace MusicBox.CLI
+﻿using System;
+
+namespace MusicBox.CLI
 {
     internal class Program
     {

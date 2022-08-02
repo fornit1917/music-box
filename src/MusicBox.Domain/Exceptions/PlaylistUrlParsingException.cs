@@ -1,4 +1,6 @@
-﻿namespace MusicBox.Domain.Exceptions
+﻿using System;
+
+namespace MusicBox.Domain.Exceptions
 {
     [Serializable]
     public class PlaylistUrlParsingException : Exception

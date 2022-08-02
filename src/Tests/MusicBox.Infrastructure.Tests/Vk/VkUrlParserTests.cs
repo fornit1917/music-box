@@ -1,6 +1,7 @@
 ﻿using MusicBox.Domain.Models;
 using MusicBox.Infrastructure.Vk;
 using MusicBox.Infrastructure.Vk.Models;
+using System;
 
 namespace MusicBox.Infrastructure.Tests.Vk
 {
