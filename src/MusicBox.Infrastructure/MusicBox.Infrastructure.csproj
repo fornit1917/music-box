@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="YouTube\" />
-    <Folder Include="YandexMusic\" />
   </ItemGroup>
 
   <ItemGroup>

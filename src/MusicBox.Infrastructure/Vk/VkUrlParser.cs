@@ -44,7 +44,7 @@ namespace MusicBox.Infrastructure.Vk
                 return CreateAccountAudiosInfo(uri, accountAudiosMatch.Groups[1].Value);
             }
 
-            throw new PlaylistUrlParsingException($"It's not a link to VK music playlist: '{uri.AbsoluteUri}'");
+            throw new PlaylistUrlParsingException($"It's not a link to supported VK music playlist: '{uri.AbsoluteUri}'");
         }
 
         private PlaylistUrlInfo CreateAccountAudiosInfo(Uri uri, string accountId)
