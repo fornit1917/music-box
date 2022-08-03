@@ -1,9 +1,9 @@
 ﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.Vk;
-using MusicBox.Infrastructure.Vk.Models;
+using MusicBox.Infrastructure.ServiceClients.Vk;
+using MusicBox.Infrastructure.ServiceClients.Vk.Models;
 using System;
 
-namespace MusicBox.Infrastructure.Tests.Vk
+namespace MusicBox.Infrastructure.Tests.ServiceClients.Vk
 {
     public class VkUrlParserTests
     {

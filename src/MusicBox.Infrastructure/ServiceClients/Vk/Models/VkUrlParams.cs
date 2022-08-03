@@ -1,4 +1,4 @@
-﻿namespace MusicBox.Infrastructure.Vk.Models
+﻿namespace MusicBox.Infrastructure.ServiceClients.Vk.Models
 {
     public static class VkUrlParams
     {

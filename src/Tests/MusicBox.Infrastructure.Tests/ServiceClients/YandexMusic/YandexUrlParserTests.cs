@@ -1,9 +1,9 @@
 ﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.YandexMusic;
-using MusicBox.Infrastructure.YandexMusic.Models;
+using MusicBox.Infrastructure.ServiceClients.YandexMusic;
+using MusicBox.Infrastructure.ServiceClients.YandexMusic.Models;
 using System;
 
-namespace MusicBox.Infrastructure.Tests.Yandex
+namespace MusicBox.Infrastructure.Tests.ServiceClients.YandexMusic
 {
     public class YandexUrlParserTests
     {

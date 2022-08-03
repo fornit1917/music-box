@@ -1,4 +1,4 @@
-﻿namespace MusicBox.Infrastructure.YandexMusic.Models
+﻿namespace MusicBox.Infrastructure.ServiceClients.YandexMusic.Models
 {
     public static class YandexUrlParams
     {

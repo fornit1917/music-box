@@ -1,15 +1,11 @@
 ﻿using MusicBox.Domain.Exceptions;
 using MusicBox.Domain.Models;
 using MusicBox.Domain.Services;
-using MusicBox.Infrastructure.YandexMusic.Models;
+using MusicBox.Infrastructure.ServiceClients.YandexMusic.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace MusicBox.Infrastructure.YandexMusic
+namespace MusicBox.Infrastructure.ServiceClients.YandexMusic
 {
     public class YandexUrlParser : IServiceUrlParser
     {

@@ -1,13 +1,13 @@
 ﻿using MusicBox.Domain.Exceptions;
 using MusicBox.Domain.Models;
 using MusicBox.Domain.Services;
-using MusicBox.Infrastructure.Vk.Models;
+using MusicBox.Infrastructure.ServiceClients.Vk.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MusicBox.Infrastructure.Vk
+namespace MusicBox.Infrastructure.ServiceClients.Vk
 {
     public class VkUrlParser : IServiceUrlParser
     {

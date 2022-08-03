@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="YouTube\" />
+    <Folder Include="ServiceClients\YouTube\" />
   </ItemGroup>
 
   <ItemGroup>
