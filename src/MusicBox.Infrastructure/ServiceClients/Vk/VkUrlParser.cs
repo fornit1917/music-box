@@ -11,7 +11,7 @@ namespace MusicBox.Infrastructure.ServiceClients.Vk
 {
     public class VkUrlParser : IServiceUrlParser
     {
-        private static readonly IReadOnlyList<string> SupportedDomains = new[] { "vk.com", "m.vk.com" };
+        private static readonly IReadOnlyList<string> SupportedDomains = new[] { "vk.com", "m.vk.com", "www.vk.com", "www.m.vk.com" };
 
         private static readonly Regex AccountAudiosRegex = new Regex("audios(\\-{0,1}[0-9]+)");
         private static readonly Regex WallPostRegex = new Regex("wall(\\-{0,1}[0-9]+_[0-9]+)");
@@ -20,7 +20,7 @@ namespace MusicBox.Infrastructure.ServiceClients.Vk
 
         public bool CanParseUrl(Uri uri)
         {
-            return SupportedDomains.Contains(uri.Host);
+            return SupportedDomains.Contains(uri.Host.ToLower());
         }
 
         public PlaylistUrlInfo ParseUrl(Uri uri)

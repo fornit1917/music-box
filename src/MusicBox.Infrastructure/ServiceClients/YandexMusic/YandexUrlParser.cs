@@ -3,6 +3,7 @@ using MusicBox.Domain.Models;
 using MusicBox.Domain.Services;
 using MusicBox.Infrastructure.ServiceClients.YandexMusic.Models;
 using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace MusicBox.Infrastructure.ServiceClients.YandexMusic
@@ -15,9 +16,11 @@ namespace MusicBox.Infrastructure.ServiceClients.YandexMusic
         private static readonly Regex PlaylistRegex = new Regex("/users/([^/]+)/playlists/([^/]+)/?$");
         private static readonly Regex UserAllRegex = new Regex("/users/([^/]+)/tracks/?$");
 
+        private static readonly string[] SupportedDomains = new[] { "music.yandex.ru", "www.music.yandex.ru" }; 
+
         public bool CanParseUrl(Uri uri)
         {
-            return uri.Host == "music.yandex.ru";
+            return SupportedDomains.Contains(uri.Host.ToLower());
         }
 
         public PlaylistUrlInfo ParseUrl(Uri uri)

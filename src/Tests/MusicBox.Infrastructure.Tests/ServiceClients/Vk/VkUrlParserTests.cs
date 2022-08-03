@@ -12,6 +12,8 @@ namespace MusicBox.Infrastructure.Tests.ServiceClients.Vk
         [Theory]
         [InlineData("https://vk.com/audios123", true)]
         [InlineData("https://m.vk.com/audios1234", true)]
+        [InlineData("https://www.vk.com/audios123", true)]
+        [InlineData("https://www.m.vk.com/audios1234", true)]
         [InlineData("https://unknownwebsite.com/audios1234", false)]
         public void ReturnsCanParseFlag(string url, bool expectedCanParse)
         {

@@ -11,6 +11,7 @@ namespace MusicBox.Infrastructure.Tests.ServiceClients.YandexMusic
 
         [Theory]
         [InlineData("https://music.yandex.ru/album/123", true)]
+        [InlineData("https://www.music.yandex.ru/album/123", true)]
         [InlineData("https://vk.com/album/123", false)]
         public void ReturnsCanParseFlag(string url, bool expectedResult)
         {

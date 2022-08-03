@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ServiceClients\YouTube\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MusicBox.Domain\MusicBox.Domain.csproj" />
   </ItemGroup>
 
