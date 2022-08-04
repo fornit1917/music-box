@@ -1,5 +1,5 @@
 ﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.ServiceClients;
+using MusicBox.Infrastructure;
 using System;
 
 namespace MusicBox.CLI

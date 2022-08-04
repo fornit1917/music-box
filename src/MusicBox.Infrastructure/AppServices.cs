@@ -4,7 +4,7 @@ using MusicBox.Infrastructure.ServiceClients.Vk;
 using MusicBox.Infrastructure.ServiceClients.YandexMusic;
 using MusicBox.Infrastructure.ServiceClients.YouTube;
 
-namespace MusicBox.Infrastructure.ServiceClients
+namespace MusicBox.Infrastructure
 {
     public class AppServices : IAppServices
     {

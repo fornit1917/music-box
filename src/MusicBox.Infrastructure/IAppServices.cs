@@ -1,6 +1,6 @@
 ﻿using MusicBox.Domain.Services;
 
-namespace MusicBox.Infrastructure.ServiceClients
+namespace MusicBox.Infrastructure
 {
     public interface IAppServices
     {
