@@ -35,7 +35,7 @@ namespace MusicBox.Domain.Services.Impl
             IServiceUrlParser? parser = _parsers.FirstOrDefault(p => p.CanParseUrl(uri));
             if (parser == null)
             {
-                throw new PlaylistUrlParsingException($"Service {uri.Host} is not supported.");
+                throw new PlaylistUrlParsingException($"Service '{uri.Host}' is not supported.");
             }
 
             return parser.ParseUrl(uri);
