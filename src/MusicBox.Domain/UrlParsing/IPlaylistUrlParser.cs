@@ -1,6 +1,4 @@
-﻿using MusicBox.Domain.Models;
-
-namespace MusicBox.Domain.Services
+﻿namespace MusicBox.Domain.UrlParsing
 {
     public interface IPlaylistUrlParser
     {

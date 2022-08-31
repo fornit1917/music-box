@@ -1,10 +1,8 @@
-﻿using MusicBox.Domain.Exceptions;
-using MusicBox.Domain.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MusicBox.Domain.Services.Impl
+namespace MusicBox.Domain.UrlParsing
 {
     public class PlaylistUrlParser : IPlaylistUrlParser
     {
@@ -27,7 +25,7 @@ namespace MusicBox.Domain.Services.Impl
             {
                 uri = new Uri(url);
             }
-            catch(UriFormatException e)
+            catch (UriFormatException e)
             {
                 throw new PlaylistUrlParsingException("Incorrect url format.", e);
             }

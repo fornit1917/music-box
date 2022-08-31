@@ -1,4 +1,4 @@
-﻿using MusicBox.Domain.Models;
+﻿using MusicBox.Domain.UrlParsing;
 using MusicBox.Infrastructure;
 using System;
 

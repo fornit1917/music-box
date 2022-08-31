@@ -1,10 +1,7 @@
-﻿using MusicBox.Domain.Exceptions;
-using MusicBox.Domain.Models;
-using MusicBox.Domain.Services;
-using MusicBox.Domain.Services.Impl;
+﻿using MusicBox.Domain.UrlParsing;
 using System;
 
-namespace MusicBox.Domain.Tests.Services
+namespace MusicBox.Domain.Tests.UrlParsing
 {
     public class PlaylistUrlParserTests
     {

@@ -1,6 +1,6 @@
-﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.ServiceClients.Vk;
-using MusicBox.Infrastructure.ServiceClients.Vk.Models;
+﻿using MusicBox.Domain;
+using MusicBox.Domain.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.Vk.UrlParsing;
 using System;
 
 namespace MusicBox.Infrastructure.Tests.ServiceClients.Vk

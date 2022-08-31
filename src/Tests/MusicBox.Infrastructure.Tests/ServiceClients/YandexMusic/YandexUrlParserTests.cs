@@ -1,6 +1,6 @@
-﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.ServiceClients.YandexMusic;
-using MusicBox.Infrastructure.ServiceClients.YandexMusic.Models;
+﻿using MusicBox.Domain;
+using MusicBox.Domain.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.YandexMusic.UrlParsing;
 using System;
 
 namespace MusicBox.Infrastructure.Tests.ServiceClients.YandexMusic

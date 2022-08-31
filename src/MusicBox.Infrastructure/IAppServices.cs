@@ -1,4 +1,4 @@
-﻿using MusicBox.Domain.Services;
+﻿using MusicBox.Domain.UrlParsing;
 
 namespace MusicBox.Infrastructure
 {

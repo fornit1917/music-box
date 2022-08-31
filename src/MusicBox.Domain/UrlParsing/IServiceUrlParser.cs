@@ -1,7 +1,6 @@
-﻿using MusicBox.Domain.Models;
-using System;
+﻿using System;
 
-namespace MusicBox.Domain.Services
+namespace MusicBox.Domain.UrlParsing
 {
     public interface IServiceUrlParser
     {

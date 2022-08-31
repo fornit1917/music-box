@@ -1,4 +1,4 @@
-﻿namespace MusicBox.Domain.Models
+﻿namespace MusicBox.Domain
 {
     public enum Service
     {

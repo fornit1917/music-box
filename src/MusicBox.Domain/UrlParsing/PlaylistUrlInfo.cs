@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MusicBox.Domain.Models
+namespace MusicBox.Domain.UrlParsing
 {
     public class PlaylistUrlInfo
     {

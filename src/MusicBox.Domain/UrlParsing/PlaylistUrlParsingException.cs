@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MusicBox.Domain.Exceptions
+namespace MusicBox.Domain.UrlParsing
 {
     [Serializable]
     public class PlaylistUrlParsingException : Exception

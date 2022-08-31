@@ -1,4 +1,4 @@
-﻿namespace MusicBox.Infrastructure.Tests.ServiceClients.YouTube.Models
+﻿namespace MusicBox.Infrastructure.ServiceClients.YouTube.UrlParsing
 {
     public static class YouTubeUrlParams
     {

@@ -1,11 +1,7 @@
-﻿using MusicBox.Domain.Models;
-using MusicBox.Infrastructure.ServiceClients.YouTube;
-using MusicBox.Infrastructure.Tests.ServiceClients.YouTube.Models;
+﻿using MusicBox.Domain;
+using MusicBox.Domain.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.YouTube.UrlParsing;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicBox.Infrastructure.Tests.ServiceClients.YouTube
 {

@@ -1,8 +1,7 @@
-﻿using MusicBox.Domain.Services;
-using MusicBox.Domain.Services.Impl;
-using MusicBox.Infrastructure.ServiceClients.Vk;
-using MusicBox.Infrastructure.ServiceClients.YandexMusic;
-using MusicBox.Infrastructure.ServiceClients.YouTube;
+﻿using MusicBox.Domain.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.Vk.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.YandexMusic.UrlParsing;
+using MusicBox.Infrastructure.ServiceClients.YouTube.UrlParsing;
 
 namespace MusicBox.Infrastructure
 {
