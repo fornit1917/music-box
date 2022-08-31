@@ -9,4 +9,8 @@
     <ProjectReference Include="..\MusicBox.Domain\MusicBox.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ServiceClients\YandexMusic\Tracks\" />
+  </ItemGroup>
+
 </Project>

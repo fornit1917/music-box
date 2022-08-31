@@ -1,4 +1,6 @@
-﻿using MusicBox.Domain.UrlParsing;
+﻿using MusicBox.Domain.Auth;
+using MusicBox.Domain.UrlParsing;
+using MusicBox.Infrastructure.Networking;
 using MusicBox.Infrastructure.ServiceClients.Vk.UrlParsing;
 using MusicBox.Infrastructure.ServiceClients.YandexMusic.UrlParsing;
 using MusicBox.Infrastructure.ServiceClients.YouTube.UrlParsing;
@@ -9,14 +11,19 @@ namespace MusicBox.Infrastructure
     {
         public IPlaylistUrlParser PlaylistUrlParser { get; private set; }
 
+        public IAuthProcessFactory AuthProcessFactory { get; private set; }
+
         protected AppServices()
         {
         }
 
         public static IAppServices Create()
         {
+            var httpClientFactory = new WebClientFactory();
+
             var appServices = new AppServices();
             appServices.PlaylistUrlParser = CreatePlaylistUrlParser();
+            appServices.AuthProcessFactory = new AuthProcessFactory(httpClientFactory);
             return appServices;
         }
 

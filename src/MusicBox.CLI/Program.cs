@@ -1,12 +1,13 @@
 ﻿using MusicBox.Domain.UrlParsing;
 using MusicBox.Infrastructure;
 using System;
+using System.Threading.Tasks;
 
 namespace MusicBox.CLI
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             IAppServices appServices = AppServices.Create();
             
@@ -19,6 +20,26 @@ namespace MusicBox.CLI
                 {
                     PlaylistUrlInfo urlInfo = appServices.PlaylistUrlParser.ParseUrl(url);
                     PrintPlaylistUrlInfo(urlInfo);
+
+                    if (urlInfo.IsAuthenticationRequired)
+                    {
+                        Console.WriteLine($"Authentication is required for {urlInfo.Service}. Please, provide your credentials.");
+                        
+                        Console.Write("Login: ");
+                        string userName = Console.ReadLine() ?? "";
+
+                        Console.Write("Password: ");
+                        string password = Console.ReadLine() ?? "";
+
+                        var authProcess = appServices.AuthProcessFactory.CreateAuthProcess(urlInfo.Service);
+                        var authResult = await authProcess.SendCredentials(userName, password);
+
+                        Console.WriteLine("[Info] Authentication result: ");
+                        foreach (var key in authResult.Data.Keys)
+                        {
+                            Console.WriteLine($"   {key}:{authResult.Data[key]}");
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
