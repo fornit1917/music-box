@@ -37,12 +37,15 @@ namespace MusicBox.Infrastructure.ServiceClients.YandexMusic.Auth
                 throw new AuthException($"Yandex authentication request returned not success response: {response.ReasonPhrase}");
             }
 
-            // todo: handle case with incorrect credentials
-
             var cookies = _webClient.CookieContainer
                 .GetCookies(new Uri("https://music.yandex.ru"))
                 .AsEnumerable()
                 .ToDictionary(x => x.Name, x => x.Value);
+
+            if (!cookies.ContainsKey("Session_id"))
+            {
+                throw new AuthException($"Authentication failed. Check your credentials.");
+            }
             
             return new AuthResult(cookies);
         }
